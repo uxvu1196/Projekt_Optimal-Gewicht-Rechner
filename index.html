@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <form action="">
+        <h1>Idealgewichtsrechner</h1>
+        <label for="size">Körpergröße</label>
+        <input type="number" name="size" id="size" min="0" max="500" placeholder="180">
+        <!-- <input type="number" name="size" id="size" placeholder="180"> -->
+
+        <label for="age">Alter</label>
+        <input type="number" name="age" id="age" min="0" max="200" placeholder="36">
+
+        <label for="body">Körperbau</label>
+        <input type="radio" name="body" id="bodyBreit">
+        <label for="bodyBreit">Breite</label>
+
+        <input type="radio" name="body" id="bodySchmal" checked>
+        <label for="bodySchmal">Schmale</label>
+        <input type="button" value="Submit" onclick="calculate()">
+
+        <p>Dein Idealgewicht ist <span id="gewicht">67,7 kg</span></p>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
